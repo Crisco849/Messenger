@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script>
+    const roomName = "<%= roomName %>"
+  </script>
+  <script defer src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/chat.css" />
+
+</head>
+<body>
+  <div id="chat-container">
+        <div id="search-container">
+            <form action="/room" method="POST">
+                <input id="room-form" type="text" type="text" placeholder="Add new room." required/>
+                <button type="submit" id="sub">Create</button>
+            </form>
+        </div>
+
+        <div id="new-message-container">
+            <a href="#">+</a>
+        </div>
+
+        <div id="room-container">
+         
+        </div>
+        
+    <div id="chat-title">
+        <span id="Username"></span>
+        <img src="/css/images/search/1.png" style="width: 20px; height: 20px;" alt="Delete Conversation" />
+    </div>
+    
+    <div id="message-container">
+        <div class="message - row you - message" id="you">
+
+
+        </div>
+
+        
+        <div class="message-row other-message">
+            
+        </div>
+        
+    </div>
+    <div id="chat-form">
+        <img src="/css/images/search/trash.svg" style="width: 20px; height: 20px;" alt="Add Attachment" />
+        <form id="send-container">
+          <input type="text" placeholder="Type a message" id="message-input" />
+          <button type="submit">New Room</button>
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>

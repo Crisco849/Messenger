@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat App</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/chat.css" />
+   
+
+</head>
+<body>
+    
+    <div id="chat-container">
+        <div id="search-container">
+            <input type="text" placeholder="Search" />
+        </div>
+        <div id="conversation-list">
+           <% Object.keys(rooms).forEach(room => { %>
+                
+                <script>
+                    addRoom("<%= room %>", "/<%= room %>");
+                    function addRoom(roomName, URL) {
+                        var convoNum = "convo $roomCount.toString()$";
+                        var setURL = "location.href='"+URL+"';";
+                        const roomElement = document.createElement('div');
+                        roomElement.setAttribute('class', 'conversation');
+                        roomElement.setAttribute('id', convoNum);
+                        roomElement.setAttribute('onclick', setURL);
+                        roomElement.setAttribute('style', 'cursor: pointer;');
+                        roomElement.innerHTML = roomName;       
+                        document.getElementById('conversation-list').appendChild(roomElement);   
+                    }
+                </script>
+                <!--
+                <div><%= room %>
+                    <a id="join" href="/<%= room %>">Join</a>
+                </div>-->
+                
+            <% }) %> 
+        </div>
+    <div id="new-message-container">
+        <a href="">+</a>
+    </div>
+    <div id="chat-title">
+        <span id="Username"></span>
+        <img src="/css/images/search/trash.svg" style="width: 20px; height: 20px;" alt="Delete Conversation" />
+        <form action="/room" method="POST">
+        <input name="room" type="text" required>
+        <button type="submit">New Room</button>
+  </form>
+    </div>
+    <div id="chat-message-list">
+        <div class="message - row you - message" id="you">
+        </div>
+    </div>
+    <div id="chat-form">
+        <img src="/css/images/search/1.png" style="width: 20px; height: 20px;" alt="Add Attachment" />
+        <input type="text" placeholder="Type a message" id="messageInput" />
+    </div>
+    </div>
+    <script>
+                    function addRoom(roomName, URL) {
+                        var convoNum = "convo $roomCount.toString()$";
+                        var setURL = "location.href='"+URL+"';";
+                        const roomElement = document.createElement('div');
+                        roomElement.setAttribute('class', 'conversation');
+                        roomElement.setAttribute('id', convoNum);
+                        roomElement.setAttribute('onclick', setURL);
+                        roomElement.setAttribute('style', 'cursor: pointer;');
+                        roomElement.innerHTML = roomName;          
+                    }
+                    
+                </script>
+    
+</body>
+</html>`

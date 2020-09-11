@@ -1,3 +1,0 @@
-C:\Users\Collin\Documents\GitHub\Messenger\Messenger-App\obj\Debug\Messenger-App.njsproj.CoreCompileInputs.cache
-C:\Users\Collin\Documents\GitHub\Messenger\Messenger-App\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Users\Collin\Documents\GitHub\Messenger\Messenger-App\obj\Debug\Messenger-App.njsprojAssemblyReference.cache

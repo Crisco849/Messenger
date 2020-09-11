@@ -60,10 +60,10 @@ body {
 	border-radius: 2px;
 	height: 30px;
 	border: 0;
-	padding-left: 48px;
-	padding-right: 20px;
+	padding-left: 45px;
+	padding-right: 4px;
 	font-size: 1.4rem;
-	background: url('../Messenger-App/css/images/search/search.png') no-repeat rgba(255, 255, 255, 0.3);
+	background: url('images/search/search.png') no-repeat rgba(255, 255, 255, 0.3);
 	background-position: 15px center;
 	background-size: 20px 20px;
 
@@ -76,12 +76,25 @@ body {
 
 #conversation-list {
 	grid-area: conversation-list;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	color: white;
+	text-align: center;
+	padding-top: 10%;
+
+	
+	font-size: 2.4rem;
+}
+
+#join {
+	color: black;
 }
 
 .conversation {
 	display: grid;
 	grid-template-columns: 40px 1fr max-content;
-	grid-gap: 10px;
+	grid-gap: 30px;
 	color: #ddd;
 	font-size: 1.3rem;
 	border-bottom: 1px solid #002C88;
@@ -106,9 +119,10 @@ body {
 .title-text {
 	font-weight: bold;
 	color: #eee;
-	padding-left: 5px;
-	white-space: nowrap;
-	overflow-x: hidden;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	/*white-space: nowrap;
+	overflow-x: hidden;*/
 	text-overflow: ellipsis;
 }
 
@@ -168,7 +182,7 @@ body {
 #chat-message-list {
 	grid-area: chat-message-list;
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	padding: 0 20px;
 }
 
