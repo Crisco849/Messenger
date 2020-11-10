@@ -59,6 +59,10 @@ io.on("connection", (socket) => {
         .to(room)
         .broadcast.emit("user-disconnected", rooms[room].users[socket.id]);
       delete rooms[room].users[socket.id];
+
+      if (rooms[room].length == 0) {
+        delete rooms[room];
+      }
     });
   });
 });
