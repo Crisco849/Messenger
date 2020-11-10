@@ -1,34 +1,21 @@
 "use strict";
 
-// [START gae_flex_quickstart]
-//const express = require('express');
-//const app = express();
-
-// new
-//const app = require('express')();
-// trying out ejs engine---- app.set('view engine', 'pug');
 const express = require("express");
 const app = express();
 const server = require("http").Server(app);
 const io = require("socket.io")(server);
-///// new
 
-// newest build==========
 app.set("views", "./views");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 const rooms = {};
-// ======================
 
 app.get("/", (req, res) => {
-  // res.render('index.pug');
   res.render("index", { rooms: rooms });
-  //res.status(200).send('Hello, world!').end();
 });
 
-// new-==================
 app.post("/room", (req, res) => {
   if (rooms[req.body.room] != null) {
     return res.redirect("/");
@@ -46,7 +33,6 @@ app.get("/:room", (req, res) => {
   res.render("room", { roomName: req.params.room });
 });
 
-// in original server.js: server.listen(8080) next if statement should do the same thing.
 if (module === require.main) {
   const PORT = process.env.PORT || 65080;
   server.listen(PORT, () => {
@@ -62,12 +48,10 @@ io.on("connection", (socket) => {
     socket.to(room).broadcast.emit("user-connected", name);
   });
   socket.on("send-chat-message", (room, message) => {
-    socket
-      .to(room)
-      .broadcast.emit("chat-message", {
-        message: message,
-        name: rooms[room].users[socket.id],
-      });
+    socket.to(room).broadcast.emit("chat-message", {
+      message: message,
+      name: rooms[room].users[socket.id],
+    });
   });
   socket.on("disconnect", () => {
     getUserRooms(socket).forEach((room) => {
@@ -85,14 +69,5 @@ function getUserRooms(socket) {
     return names;
   }, []);
 }
-//=======================
-
-// Start the server
-/*const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-  console.log('Press Ctrl+C to quit.');
-}); */
-// [END gae_flex_quickstart]
 
 module.exports = server;
