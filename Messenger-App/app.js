@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 const rooms = {};
-
+var count = 0;
 app.get("/", (req, res) => {
   res.render("index", { rooms: rooms });
 });
@@ -46,6 +46,7 @@ io.on("connection", (socket) => {
     socket.join(room);
     rooms[room].users[socket.id] = name;
     socket.to(room).broadcast.emit("user-connected", name);
+    count++;
   });
   socket.on("send-chat-message", (room, message) => {
     socket.to(room).broadcast.emit("chat-message", {
@@ -54,13 +55,16 @@ io.on("connection", (socket) => {
     });
   });
   socket.on("disconnect", () => {
+    console.log("Disconnected");
     getUserRooms(socket).forEach((room) => {
       socket
         .to(room)
         .broadcast.emit("user-disconnected", rooms[room].users[socket.id]);
       delete rooms[room].users[socket.id];
-
-      if (rooms[room].length == 0) {
+      if (count != 0) {
+        count--;
+      }
+      if (count == 0) {
         delete rooms[room];
       }
     });
