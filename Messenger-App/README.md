@@ -2,6 +2,7 @@
 
   <h1>GENERAL INFORMATION ABOUT THE WEBSITE</h1> 
   <ul>
+    <li> Website URL: https://crisco-chatroom.uc.r.appspot.com </li>
     <li> Website is published using Google Cloud Services. </li> 
     <li> Server and client are written with javascript. </li> 
     <li> Interactive GUI website written with HTML/CSS, but are stored as '.ejs' files in the /views/ folder. </li>
