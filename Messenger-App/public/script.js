@@ -64,5 +64,5 @@ function appendMessage(message) {
   const messageElement = document.createElement("div");
   messageElement.innerText = message;
 
-  document.getElementById("message-container").appendChild(messageElement);
+  document.getElementById("room-container").appendChild(messageElement);
 }

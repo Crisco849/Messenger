@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@
 <body>    
     <div id="chat-container">
         <div id="search-container">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="" />
         </div>
         <div id="conversation-list">
            <% Object.keys(rooms).forEach(room => { %>
@@ -38,11 +37,10 @@
             <% }) %> 
         </div>
     <div id="new-message-container">
-        <a href="">+</a>
     </div>
     <div id="chat-title">
         <span id="Username"></span>
-        <img src="/css/images/search/trash.svg" style="width: 20px; height: 20px;" alt="Delete Conversation" />
+        <p></p> 
         <form action="/room" method="POST">
         <input name="room" type="text" required>
         <button type="submit">New Room</button>
@@ -56,8 +54,6 @@
         </div>
     </div>
     <div id="chat-form">
-        <img src="/css/images/search/1.png" style="width: 20px; height: 20px;" alt="Add Attachment" />
-        <input type="text" placeholder="Type a message" id="messageInput" />
     </div>
     </div>
     <script>
