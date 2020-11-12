@@ -2,27 +2,22 @@
 
   <h1>How to run this software locally.</h1> 
   <ul>
-    <li> 1. Clone this repository(Large amount of data because of node_module dependencies). </li>
-    <li> Website has an always-on server made possible through Google Cloud. </li> 
-    <li> Server and client are written with javascript. </li> 
-    <li> Interactive GUI website written with HTML/CSS, but the HTML files are stored as '.ejs' files in the /views/ folder. </li>
+    <li> Clone this repository(Large amount of data because of node module dependencies). </li>
+    <li> Download and install Node.js to run server locally.</li> 
+    <li> Go to directory /Messenger/Messenger-App/ in the cloned repository. </li>
+    <li> Run command "node app.js"  </li>
+    <li> Open browser and type "localhost:65080" in url bar and press enter. </li>
+    <li> This will open the website GUI so you can create a room and start to chat.</li>
+    <li> You can run another instance on the same device while using a different socket or use a different device by typing in the ip address followed by the port number in the url bar. </li>
   </ul>
   </br>
 
-  <h1>SERVER INFORMATION</h1>
+  <h1>IMPORTANT</h1>
   <ul> 
-    <li> Server file is <strong><em>'app.js'</em></strong> located in /Messenger/Messenger-App/ folder. </li>
-    <li> Server is constantly running on a Google Cloud virtual machine. </li>
-    <li> It is possible to run this server locally, but it would require that you install express, NodeJS to run 'app.js' on a local server, and cjs modules. packages and change code to monitor/accept socket connections on local address. </li>
-    <li> All major server activity is displayed in the chatroom log. </li>
-    <li> Port number configuration is automated by connecting to the website. </li>
+    <li> This branch is used as way to test changes locally before pushing changes to the master branch. </li>
+    <li> The website was designed to be able to connect anyone who has an internet connection to a chatroom. This only allows multiple connections from the same network. </li>
   </ul>
   </br>
 
-  <h1>CLIENT INFORMATION</h1>
-  <ul>
-    <li> Client code is <strong><em>'script.js'</em></strong> located in /Messenger/Messenger-App/public/ folder and can be viewed by using inspect element in a browser.</li>
-    <li> This javascript file is always active on any page/room of the website.</li>
-  </ul>
 
 
