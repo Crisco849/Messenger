@@ -8,6 +8,7 @@ const app = express();
 const server = require("http").Server(app);
 // Initializing server socket functionality with socket.io
 const io = require("socket.io")(server);
+server.listen(65080);
 
 // Express view engine initialization.
 app.set("views", "./views");

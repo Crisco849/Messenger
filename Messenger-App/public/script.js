@@ -1,7 +1,7 @@
 // Client side for browser
 
-// Initialize socket on website url.
-const socket = io("https://crisco-chatroom.uc.r.appspot.com");
+// Initialize socket on local ip address.
+const socket = io("http://localhost:65080");
 
 // Define references for HTML components.
 const messageContainer = document.getElementById("message-container");
