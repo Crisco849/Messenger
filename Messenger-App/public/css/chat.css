@@ -27,7 +27,7 @@ body {
 		'conversation-list chat-message-list' 1fr
 		'new-message-container chat-form' 78px
 		/ 275px 1fr;
-	min-width: 800px;
+	min-width: 400px;
 	max-width: 1000px;
 	max-height: 800px;
 	width: 100%;
@@ -63,7 +63,7 @@ body {
 	padding-left: 45px;
 	padding-right: 4px;
 	font-size: 1.4rem;
-	background: url('images/search/search.png') no-repeat rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.0);
 	background-position: 15px center;
 	background-size: 20px 20px;
 
