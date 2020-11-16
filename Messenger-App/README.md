@@ -25,4 +25,5 @@
     <li> This javascript file is always active on any page/room of the website.</li>
   </ul>
 
-
+  <h1> HOME PAGE </h1>
+  ![Image of Home Page](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png)
