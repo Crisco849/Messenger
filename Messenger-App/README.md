@@ -25,6 +25,7 @@
     <li> This javascript file is always active on any page/room of the website.</li>
   </ul>
 
-  <h1> HOME PAGE </h1>
-  [alt text](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/home-page.png?raw=true)
-
+  <h1> Screenshots </h1>
+  [Home Page](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png)
+  [Name Prompt](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/name-prompt.png)
+  [Chat Room](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/chatroom.png)
