@@ -2,9 +2,8 @@
 
   <h1>How to run this software locally.</h1> 
   <ul>
-    <li> Clone this repository(Large amount of data because of node module dependencies). </li>
     <li> Download and install Node.js to run server locally.</li> 
-    <li> Go to directory /Messenger/Messenger-App/ in the cloned repository. </li>
+    <li> Open a command line and go to the directory 'Local/Messenger/Messenger-App/' </li>
     <li> Run command "node app.js"  </li>
     <li> Open browser and type "localhost:65080" in url bar and press enter. </li>
     <li> This will open the website GUI so you can create a room and start to chat.</li>
