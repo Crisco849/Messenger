@@ -9,22 +9,6 @@
   </ul>
   </br>
 
-  <h1>SERVER INFORMATION</h1>
-  <ul> 
-    <li> Server file is <strong><em>'app.js'</em></strong> located in /Messenger/Messenger-App/ folder. </li>
-    <li> Server is constantly running on a Google Cloud virtual machine. </li>
-    <li> It is possible to run this server locally, but it would require that you install npm & nodejs packages and change code to monitor/accept socket connections on local address. </li>
-    <li> All major server activity is displayed in the chatroom log. </li>
-    <li> Port number configuration is automated by connecting to the website. </li>
-  </ul>
-  </br>
-
-  <h1>CLIENT INFORMATION</h1>
-  <ul>
-    <li> Client code is <strong><em>'script.js'</em></strong> located in /Messenger/Messenger-App/public/ folder and can be viewed by using inspect element in a browser.</li>
-    <li> This javascript file is always active on any page/room of the website.</li>
-  </ul>
-
   <h1> Screenshots </h1>
   <li>[Home Page](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png?raw=true)</li>
   <li>[Name Prompt](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/name-prompt.png?raw=true)</li>
