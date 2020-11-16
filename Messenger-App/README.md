@@ -26,6 +26,6 @@
   </ul>
 
   <h1> Screenshots </h1>
-  <li>[Home Page](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png)</li>
-  <li>[Name Prompt](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/name-prompt.png)</li>
-  <li>[Chat Room](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/chatroom.png)</li>
+  <li>[Home Page](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png?raw=true)</li>
+  <li>[Name Prompt](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/name-prompt.png?raw=true)</li>
+  <li>[Chat Room](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/chatroom.png?raw=true)</li>
