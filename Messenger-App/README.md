@@ -26,6 +26,5 @@
   </ul>
 
   <h1> HOME PAGE </h1>
-  ![Image of HomePage](https://raw.githubusercontent.com/Crisco849/Messenger/1.3/Messenger-App/screenshots/home-page.png)
-
+  ![alt text](https://github.com/Crisco849/Messenger/blob/1.3/Messenger-App/screenshots/home-page.png)
 
