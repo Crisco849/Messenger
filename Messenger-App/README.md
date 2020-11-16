@@ -7,7 +7,7 @@
     <li> Run command "node app.js"  </li>
     <li> Open browser and type "localhost:65080" in url bar and press enter. </li>
     <li> This will open the website GUI so you can create a room and start to chat.</li>
-    <li> You can run another instance on the same device while using a different socket or use a different device by typing in the ip address followed by the port number in the url bar. </li>
+    <li> You can run another instance on the device by opening another tab or use a different device by typing in the ip address followed by the port number in the url bar. </li>
   </ul>
   </br>
 
