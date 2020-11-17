@@ -1,4 +1,4 @@
-<h1>CMPS 413 | Class Chatroom | Collin Varisco </h1> <br />
+<h1>CMPS 413 | Class Chat | Collin Varisco </h1> <br />
 
   <h1>How to run this software locally.</h1> 
   <ul>
